@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Digikala Style Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>📱 Digi Mobile Shop</h1>
+
+  <input id="search" type="text" placeholder="جستجوی موبایل...">
+
+  <div class="cats">
+    <button onclick="filter('all')">همه</button>
+    <button onclick="filter('samsung')">سامسونگ</button>
+    <button onclick="filter('iphone')">آیفون</button>
+    <button onclick="filter('xiaomi')">شیائومی</button>
+  </div>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+  <div class="slides">
+    <img src="https://via.placeholder.com/900x300?text=Big+Sale">
+    <img src="https://via.placeholder.com/900x300?text=iPhone+Deal">
+    <img src="https://via.placeholder.com/900x300?text=Samsung+Offer">
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+  <div class="card samsung">
+    <img src="https://via.placeholder.com/250">
+    <h2>Samsung S21</h2>
+    <p>25,000 AFN</p>
+    <button onclick="order('Samsung S21')">خرید</button>
+  </div>
+
+  <div class="card iphone">
+    <img src="https://via.placeholder.com/250">
+    <h2>iPhone 13</h2>
+    <p>45,000 AFN</p>
+    <button onclick="order('iPhone 13')">خرید</button>
+  </div>
+
+  <div class="card xiaomi">
+    <img src="https://via.placeholder.com/250">
+    <h2>Xiaomi Note 11</h2>
+    <p>15,000 AFN</p>
+    <button onclick="order('Xiaomi Note 11')">خرید</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
